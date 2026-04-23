@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:news/Screens/Home.dart';
-import 'package:news/Screens/Welcome.dart';
+import 'package:news/Screens/HomePage.dart';
 import 'package:news/Screens/auth/login.dart';
 import '../widgets/costom_textFormField.dart';
 
@@ -137,7 +136,7 @@ class _SignUpState extends State<SignUp> {
                           if (!mounted) return;
                           Navigator.pushReplacement(
                             context,
-                            MaterialPageRoute(builder: (context) => Home()),
+                            MaterialPageRoute(builder: (context) => HomePage()),
                           );
                         } on FirebaseAuthException catch (e) {
                           if (!mounted) return;

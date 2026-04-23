@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:news/Screens/Welcome.dart';
-import '../../Home.dart';
-import '../Signup.dart';
+import '../../HomePage.dart';
 import '../login.dart';
 
 class AuthWrapper extends StatelessWidget {
@@ -22,7 +20,7 @@ class AuthWrapper extends StatelessWidget {
 
         // Logged in
         if (snapshot.hasData) {
-          return const Home();
+          return const HomePage();
 
         }
 

@@ -2,7 +2,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:news/Screens/Home.dart';
+
+import 'OnboardingScreen.dart';
+
 
 
 class Splash extends StatefulWidget {
@@ -16,10 +18,10 @@ class _SplashState extends State<Splash> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 4), () {
+    Timer(Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => Home()),
+        MaterialPageRoute(builder: (context) =>  OnboardingScreen()),
       );
     });
   }
@@ -27,7 +29,7 @@ class _SplashState extends State<Splash> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Center(child: SvgPicture.asset("assets/Vector.svg")),
+      body: Center(child: SvgPicture.asset("assets/Icons/Vector.svg")),
 
     );
   }

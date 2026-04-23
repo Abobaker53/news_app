@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news/Screens/Splash.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:news/Screens/auth/service/auth_Wrapper.dart';
 import 'firebase_options.dart';
 
 
@@ -21,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(scaffoldBackgroundColor: Colors.black),
       debugShowCheckedModeBanner: false,
-      home: AuthWrapper(),
+      home:Splash(),
     );
   }
 }
